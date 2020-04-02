@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: #000;
+  background-color: #eee;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -15,9 +20,25 @@ body {
   font-weight: 300;
 }
 
+[class^=heading-] {
+  font-family: "Montserrat", sans-serif;
+  color: #414857;
+}
+
 .heading-primary {
   font-size: 8rem;
-  color: #414857;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
 }
 
 .btn:link, .btn:visited {
@@ -34,6 +55,40 @@ body {
 .btn--dark:hover {
   color: white;
   background-color: #414857;
+}
+
+.dns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dns__box {
+  width: 27%;
+  margin-bottom: 8rem;
+}
+.dns__title {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.dns__title-num {
+  color: #ff214f;
+  font-size: 4.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.dns__title-text:link, .dns__title-text:visited {
+  padding-left: 2rem;
+  text-decoration: none;
+  color: #232323;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  transition: all 0.3s;
+}
+.dns__title-text:link:hover, .dns__title-text:visited:hover {
+  color: #ff214f;
 }
 
 .header {
@@ -70,6 +125,11 @@ body {
   font-size: 2.5rem;
   color: #414857;
   margin: 2rem 0 5rem 0;
+}
+
+.section-dns {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

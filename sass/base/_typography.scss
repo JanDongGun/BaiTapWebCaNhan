@@ -5,7 +5,15 @@ body{
     font-weight: 300;
 }
 
+[class^="heading-"]{
+    font-family: $default-font-2;
+    color: $color-grey-dark-2;
+}
+
 .heading-primary{
     font-size: 8rem;
-    color: $color-grey-dark-2;
+}
+
+.heading-secondary{
+    font-size: 4rem;
 }

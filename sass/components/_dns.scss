@@ -1,0 +1,43 @@
+.dns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__box{
+        width: 27%;
+        margin-bottom: 8rem;
+    }
+
+    &__title{
+        font-family: $default-font-2;
+        display: flex;
+        align-items: center;
+        margin-bottom: .5rem;
+
+        &-num{
+            color: $color-primary;
+            font-size: 4.8rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        &-text{
+            &:link,
+            &:visited{
+                padding-left: 2rem;
+                text-decoration: none;
+                color: $color-grey-dark-1;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                transition: all .3s;
+
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+
+        }
+    }
+
+}
