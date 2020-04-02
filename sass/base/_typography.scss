@@ -16,4 +16,9 @@ body{
 
 .heading-secondary{
     font-size: 4rem;
+    transition: .5s;
+
+    &:hover{
+        letter-spacing: 1rem;
+    }
 }

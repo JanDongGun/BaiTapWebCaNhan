@@ -26,6 +26,10 @@
             transform: translateY(-5px);
         }
     }
+
+    &--animate{
+        animation:btnAnimate .5s backwards ease-out;
+    }
     
 
 }

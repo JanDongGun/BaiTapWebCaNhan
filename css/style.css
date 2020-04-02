@@ -1,3 +1,23 @@
+@keyframes moveInTop {
+  0% {
+    margin-top: -10rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 2rem;
+    opacity: 1;
+  }
+}
+@keyframes btnAnimate {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -31,6 +51,10 @@ body {
 
 .heading-secondary {
   font-size: 4rem;
+  transition: 0.5s;
+}
+.heading-secondary:hover {
+  letter-spacing: 1rem;
 }
 
 .u-text-center {
@@ -39,6 +63,10 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+}
+
+.u-animated {
+  animation: zoomText 3s forwards ease-in;
 }
 
 .btn:link, .btn:visited {
@@ -62,6 +90,9 @@ body {
 }
 .btn--dark:active {
   transform: translateY(-5px);
+}
+.btn--animate {
+  animation: btnAnimate 0.5s backwards ease-out;
 }
 
 .dns {
@@ -149,7 +180,10 @@ body {
 .header__title-sub {
   font-size: 2.5rem;
   color: #414857;
-  margin: 2rem 0 5rem 0;
+  margin: -10rem 0 5rem 0;
+  animation: moveInTop 0.5s forwards ease-out;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .footer {

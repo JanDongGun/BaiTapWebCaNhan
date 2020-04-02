@@ -1,0 +1,26 @@
+@keyframes moveInTop{
+    0%{
+        margin-top: -10rem;
+        opacity: 0;
+    }
+
+
+    100%{
+        margin-top: 2rem;
+        opacity: 1;
+    }
+}
+
+@keyframes btnAnimate{
+    0%{
+        transform: translateY(10rem);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
