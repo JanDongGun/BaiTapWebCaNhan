@@ -316,6 +316,70 @@ body {
   font-size: 4rem;
 }
 
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  z-index: 60;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 1s cubic-bezier(1, 0, 0, 1);
+}
+.nav__close {
+  color: white;
+  font-size: 5rem;
+  position: fixed;
+  top: 3rem;
+  right: 4rem;
+  transform: scale(0);
+  cursor: pointer;
+  transition: 0.5s 1s;
+}
+.nav__close--zoomClose {
+  transform: scale(1);
+}
+.nav__list {
+  list-style: none;
+}
+.nav__item {
+  position: relative;
+}
+.nav__item:link, .nav__item:visited {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 1rem 0;
+  transition: 0.5s;
+  padding: 1rem 3rem;
+}
+.nav__item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #ff214f;
+  border-radius: 3px;
+  z-index: -1;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+}
+.nav__item:hover:before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.nav--animate {
+  top: 0;
+}
+
 .section-dns {
   max-width: 80%;
   margin: 0 auto 15rem auto;
