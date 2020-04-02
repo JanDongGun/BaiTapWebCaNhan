@@ -46,15 +46,22 @@ body {
   font-size: 1.8rem;
 }
 .btn--dark {
+  display: inline-block;
   color: #414857;
-  border: 1px solid #414857;
+  border: 0.5px solid #414857;
   padding: 1.5rem 4rem;
   border-radius: 5px;
   transition: 0.4s;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 .btn--dark:hover {
   color: white;
   background-color: #414857;
+  transform: translateY(-10px);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+.btn--dark:active {
+  transform: translateY(-5px);
 }
 
 .dns {
@@ -127,9 +134,46 @@ body {
   margin: 2rem 0 5rem 0;
 }
 
+.footer {
+  padding: 18rem 0;
+  background-image: linear-gradient(to right, rgba(37, 41, 50, 0.85), rgba(37, 41, 50, 0.85)), url(../../img/footer.jpg);
+  background-size: cover;
+  color: white;
+}
+.footer__logo {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+  text-align: center;
+}
+.footer__infors {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+.footer__infor {
+  width: 30%;
+}
+.footer__infor ul {
+  list-style: none;
+}
+.footer__infor ul li {
+  display: inline-block;
+}
+.footer__infor ul li a:link, .footer__infor ul li a:visited {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  padding: 0 0.5rem;
+}
+
 .section-dns {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 15rem auto;
 }
 
 /*# sourceMappingURL=style.css.map */
