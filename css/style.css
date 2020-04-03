@@ -121,6 +121,7 @@ body {
 }
 .btn--animate {
   animation: btnAnimate 0.5s backwards ease-out;
+  animation-delay: 2s;
 }
 
 .dns {
@@ -210,7 +211,7 @@ body {
   color: #414857;
   margin: -10rem 0 5rem 0;
   animation: moveInTop 0.5s forwards ease-out;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
   opacity: 0;
 }
 
@@ -271,7 +272,8 @@ body {
   color: #232323;
   text-decoration: none;
   transition: 0.5s;
-  animation: moveInLeft 1s ease-out forwards;
+  animation: moveInLeft 1s ease-out backwards;
+  animation-delay: 1s;
 }
 .menu__bars {
   width: 40px;
@@ -280,7 +282,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: moveInRight 1s ease-out forwards;
+  animation: moveInRight 1s ease-out backwards;
+  animation-delay: 1s;
 }
 .menu__bar {
   width: 30px;
