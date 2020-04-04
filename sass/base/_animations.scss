@@ -55,6 +55,28 @@
     100%{
         transform: translateX(0rem);
         opacity: 1;
+    } 
+}
+
+@keyframes cssAnimate{
+
+    0%{
+        transform: rotate(0);    
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cssAnimate1{
+
+    0%{
+        transform: rotate(360deg);    
+    }
+
+    100%{
+        transform: rotate(0);
     }
 }
 
