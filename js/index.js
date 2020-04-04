@@ -74,8 +74,10 @@ window.addEventListener('DOMContentLoaded',function(){
         smoothScroll('.header',1000);
     })
 
-    btn.addEventListener('click',function(){
-        smoothScroll('.section-dns',1000);
-    })
+    if(btn !== null){ // khi sang trang khác thì ko có nút learn more nữa nên bị lỗi btn là null
+        btn.addEventListener('click',function(){
+            smoothScroll('.section-dns',1000);
+        })
+    }
 
 })
