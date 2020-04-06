@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded',function(){
     }
 
     scrollTop.addEventListener('click',function(){
-        smoothScroll('.header',1000);
+        smoothScroll('.menu',1000);
     })
 
     if(btn !== null){ // khi sang trang khác thì ko có nút learn more nữa nên bị lỗi btn là null
