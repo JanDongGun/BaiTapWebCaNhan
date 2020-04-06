@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/icon-font.css">
+    <script src="https://kit.fontawesome.com/1280773129.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap&family=Pacifico&display=swap" rel="stylesheet">  
+    <script type="text/javascript" src="../../js/index.js" ></script>
+    <title>| DNS |</title>
+</head>
+<body>
+    <div class="loader">
+        <img src="../../img/preloader.svg" alt="">
+    </div>
+
+    <nav class="nav">
+        <div class="nav__close"><i class="icon-arrows-remove"></i></div>
+        <ul class="nav__list">
+            <li><a href="#" class="nav__item">Domain name/Hosting</a></li>
+            <li><a href="#" class="nav__item">HTML</a></li>
+            <li><a href="#" class="nav__item">CSS</a></li>
+            <li><a href="#" class="nav__item">JavaScript</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu">
+        <a href="../../index.html" class="menu__logo">đông gon</a>
+        <div class="menu__bars">
+            <div class="menu__bar"></div>
+        </div>
+    </div>
+
+    <main>
+        <div class="title-main">HIỂU VỀ DNS</div>
+
+        <div class="content">
+            <div class="content__box">
+                <div class="content__title">1. DNS là viết tắt của các chữ nào?</div>
+                <div class="content__details">Domain Name System: Hệ thống tên miền hay Hệ thống phân giải (resolve) tên miền.</div>
+                <img src="../../img/dns1.jpg" class="content__img"></img>
+            </div>
+
+            <div class="content__box">
+                <div class="content__title">2. DNS dùng để làm gì?</div>
+                <div class="content__details">DNS dùng để lưu trữ các tên miền (domain name, ví dụ www.google.com), cung cấp dịch vụ chuyển đổi từ địa chỉ dạng chuỗi (tên miền) sang địa chỉ dạng số (IP) và ngược lại (ví dụ www.google.com <> 216.58.221.228).</div>
+                <img src="../../img/dns2.png" class="content__img"></img>
+            </div>
+
+            <div class="content__box">
+                <div class="content__title">3. Tên miền cấp 1, cấp 2, cấp 3 là gì? cho ví dụ mỗi loại?</div>
+                <div class="content__details">Tên miền cấp 1 cũng là tên miền quốc tế, được dùng chung cho nhiều quốc gia, mỗi tên miền đại diện cho một lĩnh vực, một ngành nghề, hay một khu vực địa lý. Ví dụ: .com, .net, .org, .mil, .edu, .gov, .asia, .eu</div>
+                <div class="content__details">Tên miền cấp 2 cũng là tên miền quốc gia, thông thường mỗi quốc gia sẽ có một tên miền riêng, gồm hai kí tự. Ví dụ: .vn (Việt Nam), .cn (Trung Quốc), .uk (Anh), .us (Mỹ).</div>
+                <div class="content__details">Tên miền cấp 3 là tên miền kết hợp giữa tên miền cấp 2 và tên miền cấp 1. Ví dụ: .com.vn, .edu.vn, .edu.uk, .com.us</div>
+            </div>
+
+            <div class="content__box">
+                <div class="content__title">4. Tên miền quốc tế là gì? cho 3 ví dụ?</div>
+                <div class="content__details">Tên miền quốc tế: do Trung tâm quản lý tên miền quốc tế cấp, ví dụ thường có đuôi là .com, .net, .biz, .info, .org</div>
+            </div>
+
+            <div class="content__box">
+                <div class="content__title">5. Tên miền “nội địa” hay quốc gia là gì? cho 3 ví dụ?</div>
+                <div class="content__details">Tên miền quốc gia (nội địa): do Trung tâm quản lý tên miền của mỗi quốc gia quản lý. Ví dụ tên miền của Việt Nam có đuôi dạng .vn, .com.vn, edu.vn, gov.vn. Các tên miền này do VNNIC quản lý.</div>
+            </div>
+
+            <div class="content__box">
+                <div class="content__title">6. “8.8.8.8” là gì?</div>
+                <div class="content__details">Là DNS server address của Google.</div>
+                <img src="../../img/dns3.png" class="content__img"></img>
+            </div>
+
+            <div class="content__box">
+                <div class="content__title">7. Viết lại quá trình một trình duyệt lấy trang web về?</div>
+                <div class="content__details">Dựa vào thông tin DNS server address, gửi một gói tin để phân giải tên trang web sang IP.</div>
+                <div class="content__details">Gửi một gói tin yêu cầu nội dung trang web (index.html) tới Web server.</div>
+                <div class="content__details">Web server gửi nội dung trang web về cho máy client.</div>
+                <div class="content__details">Máy client thông dịch (biên dịch) mã nguồn của trang web (HTML, CSS, JavaScript) rồi hiển thị lên trình duyệt.</div>
+            </div>
+
+            <div class="content__box">
+                <div class="content__title">8. File Host là gì?</div>
+                <div class="content__details">"File host" là "một tập tin lưu trữ thông tin IP của các máy chủ và tên miền (domain) được trỏ tới". Nó có thể được gọi là một DNS nhỏ trên máy tính của bạn. File host giúp cho các hệ điều hành biết được IP của máy chủ nơi một tên miền cụ thể nào đó được quản lý.</div>
+                <img src="../../img/dns4.png" class="content__img"></img>
+            </div>
+
+            <div class="content__box">
+                <div class="content__title">Tìm hiểu thêm</div>
+                <a href="freedomain.html" class="content__link" target="_blank">Đăng ký tên miền miễn phí &rarr;</a>
+                <a href="paiddomain.html" class="content__link" target="_blank">Đăng ký tên miền có phí &rarr;</a>
+                <a href="webserver.html" class="content__link" target="_blank">Hiểu về Web Server &rarr;</a>
+            </div>
+        </div>
+    </main>
+  
+
+    <footer class="footer">
+        <div class="footer__logo">đông gon</div>
+        <div class="footer__infors">
+            <div class="footer__infor">
+                trannguyendonggon@gmail.com<br>
+                (+84) 798 611 259
+            </div>
+            <div class="footer__infor">© Copyright 2020. All Rights Reserved</div>
+            <div class="footer__infor">
+                DaLat. 21/9A Vo Truong Toan. VN
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100024824135346" target="_blank"> <i class="fab fa-facebook-f" aria-hidden="true"></i> </a></li>
+                    <li><a href="https://www.instagram.com/gontrannguyendong/" target="_blank"> <i class="fab fa-instagram" aria-hidden="true"></i> </a></li>
+                    <li><a href="https://github.com/JanDongGun/webdesign" target="_blank"> <i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/explore" target="_blank"> <i class="fab fa-twitter"></i> </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scrollTop">&uarr;</div>
+</body>
+</html>
