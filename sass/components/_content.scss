@@ -11,6 +11,20 @@
         font-weight: bold;
         font-size: 3rem;
         margin-bottom: 1.5rem;
+
+        &--link{
+            &:link,
+            &:visited{
+                text-decoration: none;
+                color: $color-grey-dark-1;
+                border-bottom: 1px solid $color-grey-dark-1;
+                transition: .3s;
+                &:hover{
+                    color: $color-primary;
+                    opacity: .8;
+                }
+            }
+        }
     }
 
     &__details{

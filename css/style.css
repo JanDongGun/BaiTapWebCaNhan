@@ -104,6 +104,7 @@ body {
 .title-main {
   width: 100%;
   padding: 10rem;
+  text-transform: uppercase;
   text-align: center;
   margin-top: 20rem;
   background-image: linear-gradient(to right, rgba(37, 41, 50, 0.85), rgba(37, 41, 50, 0.85)), url(../../img/footer.jpg);
@@ -394,6 +395,16 @@ body {
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 1.5rem;
+}
+.content__title--link:link, .content__title--link:visited {
+  text-decoration: none;
+  color: #232323;
+  border-bottom: 1px solid #232323;
+  transition: 0.3s;
+}
+.content__title--link:link:hover, .content__title--link:visited:hover {
+  color: #eb2f64;
+  opacity: 0.8;
 }
 .content__details {
   font-family: "Roboto", sans-serif;
