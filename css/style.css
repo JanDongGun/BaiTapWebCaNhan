@@ -107,7 +107,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-top: 20rem;
-  background-image: linear-gradient(to right, rgba(37, 41, 50, 0.85), rgba(37, 41, 50, 0.85)), url(../../img/footer.jpg);
+  background-image: linear-gradient(to right, rgba(37, 41, 50, 0.85), rgba(37, 41, 50, 0.85)), url(../img/footer.jpg);
   background-size: cover;
   font-size: 5rem;
   color: white;
