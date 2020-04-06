@@ -386,6 +386,7 @@ body {
   max-width: 60%;
   margin: 15rem auto 15rem auto;
   color: #232323;
+  overflow: hidden;
 }
 .content__box {
   margin-bottom: 5rem;
@@ -395,6 +396,9 @@ body {
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 1.5rem;
+}
+.content__title--small {
+  font-size: 2rem;
 }
 .content__title--link:link, .content__title--link:visited {
   text-decoration: none;
@@ -415,8 +419,8 @@ body {
   line-height: 1.6;
 }
 .content__img {
-  width: 80%;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 .content__link:link, .content__link:visited {
   text-decoration: none;

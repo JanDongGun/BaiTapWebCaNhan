@@ -2,6 +2,7 @@
     max-width: 60%;
     margin: 15rem auto 15rem auto;
     color: $color-grey-dark-1;
+    overflow: hidden;
     
     &__box{
         margin-bottom: 5rem;
@@ -11,6 +12,10 @@
         font-weight: bold;
         font-size: 3rem;
         margin-bottom: 1.5rem;
+
+        &--small{
+            font-size: 2rem;
+        }
 
         &--link{
             &:link,
@@ -37,8 +42,8 @@
     }
 
     &__img{
-        width: 80%;
-        margin-top: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 
     &__link{
