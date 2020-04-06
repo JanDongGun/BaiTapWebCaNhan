@@ -101,6 +101,20 @@ body {
   letter-spacing: 1rem;
 }
 
+.title-main {
+  width: 100%;
+  padding: 10rem;
+  text-align: center;
+  margin-top: 20rem;
+  background-image: linear-gradient(to right, rgba(37, 41, 50, 0.85), rgba(37, 41, 50, 0.85)), url(../../img/footer.jpg);
+  background-size: cover;
+  font-size: 5rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
 .u-text-center {
   text-align: center;
 }
@@ -365,6 +379,45 @@ body {
 .scrollTop--animate {
   right: 3rem;
   transform: scale(1) translateX(0);
+}
+
+.content {
+  max-width: 60%;
+  margin: 15rem auto 15rem auto;
+  color: #232323;
+}
+.content__box {
+  margin-bottom: 5rem;
+}
+.content__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.content__details {
+  font-family: "Roboto", sans-serif;
+  color: #414857;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.content__img {
+  width: 80%;
+  margin-top: 3rem;
+}
+.content__link:link, .content__link:visited {
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
+  color: #414857;
+  transition: 0.4s;
+  margin-bottom: 1rem;
+}
+.content__link:link:hover, .content__link:visited:hover {
+  color: #eb2f64;
+  transform: translateX(5px);
 }
 
 .header {

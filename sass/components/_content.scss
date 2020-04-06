@@ -1,0 +1,47 @@
+.content{
+    max-width: 60%;
+    margin: 15rem auto 15rem auto;
+    color: $color-grey-dark-1;
+    
+    &__box{
+        margin-bottom: 5rem;
+    }
+    &__title{
+        font-family: $default-font-2;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__details{
+        font-family: $default-font-1;
+        color: $color-grey-dark-2;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    &__img{
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    &__link{
+        &:link,
+        &:visited{
+            text-decoration: none;
+            display: block;
+            font-size: 2rem;
+            color: $color-grey-dark-2;
+            transition: .4s;
+            margin-bottom: 1rem;
+
+            &:hover{
+                color: $color-primary;
+                transform: translateX(5px);
+            }
+        }
+
+    }
+}
