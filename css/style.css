@@ -436,6 +436,9 @@ body {
   color: #eb2f64;
   transform: translateX(5px);
 }
+.content li, .content dd {
+  margin-left: 3rem;
+}
 
 .header {
   width: 100%;
