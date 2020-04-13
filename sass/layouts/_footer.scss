@@ -5,6 +5,14 @@
     background-size: cover;
     color: $color-white;
 
+    @include respond(tab-port){
+        padding: 10rem 0;
+    }
+
+    @include respond(phone){
+        padding: 7rem 0;
+    }
+
     &__logo{
         font-family: $default-font-logo;
         font-size: 5rem;
@@ -15,6 +23,7 @@
         width: 70%;
         margin: 0 auto;
         display: flex;
+        flex-wrap: wrap;
         text-align: center;
         justify-content: space-between;
         border-top: 1px solid rgba(255,255,255,0.10);
@@ -24,6 +33,13 @@
 
     &__infor{
         width: 30%;
+
+        @include respond(tab-port){
+            width: 100%;
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
         ul{
             list-style: none;
 

@@ -10,4 +10,9 @@
     @if $breakpoint == tab-land {
         @media (max-width:75em){@content}; // 1200px / 16
     }
+
+    @if $breakpoint == small-desktop {
+        @media (max-width:93.75em){@content}; // 1500px / 16
+    }
+
 }

@@ -1,12 +1,58 @@
 .css{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 
+    @include respond(tab-land){
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    @include respond(phone){
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
     &__square{
         display: block;
         width: 40rem;
         height: 40rem;
         position: relative;
+
+        @include respond(small-desktop){
+            width: 30rem;
+            height: 30rem;
+        }
+
+        @include respond(tab-land){
+            width: 40rem;
+            height: 40rem;
+            &:not(:last-child){
+                margin-bottom: 10rem;
+            }
+        }
+
+        @include respond(tab-port){
+            &:not(:last-child){
+                margin-bottom: 8rem;
+            }
+        }
+
+        @include respond(phone){
+            width: 30rem;
+            height: 30rem;
+            &:not(:last-child){
+                margin-bottom: 5rem;
+            }
+
+        }
+
+
+
+
+
 
         span:nth-child(1){
             position: absolute;
@@ -74,11 +120,19 @@
         color: $color-grey-dark-2;
         transition: .5s;
 
+        @include respond(phone){
+            font-size: 2rem;
+        }
+
         &-main{
             font-size: 3rem;
             font-weight: 500;
             font-family: $default-font-2;
             text-transform: uppercase;
+
+            @include respond(phone){
+                font-size: 2rem;
+            }
         }
     }
 

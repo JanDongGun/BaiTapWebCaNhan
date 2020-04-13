@@ -6,6 +6,10 @@
     justify-content: space-between;
     margin-top: 10rem;
 
+    @include respond(phone){
+        margin-top: 5rem;
+    }
+
     &__box{
         position: relative;
         width: 30%;
@@ -17,6 +21,16 @@
         font-family: $default-font-2;
         overflow: hidden;
 
+        @include respond(tab-land){
+            width: 45%;
+        }
+
+        @include respond(phone){
+            width: 60%;
+            height: 35rem;
+            margin: 0 auto 5rem auto;
+        }
+
 
         &:hover .html__content{
             top: 0;
@@ -24,11 +38,14 @@
 
         &:hover .html__triangle{
             bottom: -22rem;
+
+            @include respond(phone){
+                bottom: -35rem;
+            }
         }
     }
 
-    &__chap{
-        
+    &__chap{   
         font-size: 7rem;
         position: absolute;
         top: 50%;
@@ -38,6 +55,14 @@
         text-align: center;
         z-index: 2;
 
+        @include respond(tab-port){
+            font-size: 5rem;
+        }
+
+        @include respond(phone){
+            font-size: 3rem;
+        }
+
         &--num{
             display: inline-block;
             color: $color-primary;
@@ -45,6 +70,15 @@
             font-weight: 500;
             font-size: 15rem;
             margin-top: -5rem;
+
+            @include respond(tab-port){
+                font-size: 10rem;
+            }
+
+            @include respond(phone){
+                font-size: 7rem;
+                margin-top: -2rem;
+            }
         }
     }
 
@@ -69,6 +103,11 @@
             text-align: center;
             color: $color-white;
             transition: .5s cubic-bezier(1,0,0,1);
+
+            @include respond(phone){
+                font-size: 2rem;
+                top: 0;
+            }
         }
 
     }
@@ -83,5 +122,9 @@
         z-index: 5;
         transform: rotate(50deg) ;
         transition: .3s .3s;
+
+        @include respond(phone){
+            bottom: -35rem;
+        }
     }
 }

@@ -4,6 +4,7 @@ body{
     font-family: $default-font-1;
     font-weight: 300;
     overflow-x: hidden;
+    width: 100%;
 }
 
 [class^="heading-"]{
@@ -27,8 +28,15 @@ body{
     font-size: 4rem;
     transition: .5s;
 
+    @include respond(phone){
+        font-size: 3rem;
+    }
+
     &:hover{
         letter-spacing: 1rem;
+        @include respond(tab-port){
+            letter-spacing: 0rem;
+        }
     }
 }
 

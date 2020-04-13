@@ -6,6 +6,16 @@
     &__box{
         width: 27%;
         margin-bottom: 8rem;
+
+        @include respond(tab-port){
+            width: 45%;
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone){
+            width: 70%;
+            margin: 0 auto 5rem auto;
+        }
     }
 
     &__title{

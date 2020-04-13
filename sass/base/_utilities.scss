@@ -4,6 +4,9 @@
 
 .u-margin-bottom-big{
     margin-bottom: 8rem;
+    @include respond(phone){
+        margin-bottom: 4rem;
+    }
 }
 
 .u-animated{

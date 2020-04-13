@@ -13,10 +13,18 @@
     width: 100%;
     padding: 15rem 0 15rem 0;
     background-color: $color-grey-light-1;
+
+    @include respond(tab-port){
+        padding: 8rem 0 8rem 0;
+    }
 }
 
 .section-css{
-    width: 90%;
+    width: 80%;
     padding: 15rem 0 15rem 0;
     margin: auto;
+
+    @include respond(tab-port){
+        padding: 8rem 0 8rem 0;
+    }
 }
