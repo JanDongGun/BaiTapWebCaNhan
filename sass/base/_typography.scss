@@ -12,6 +12,14 @@ body{
 
 .heading-primary{
     font-size: 8rem;
+
+    @include respond(tab-port){
+        font-size: 7rem;
+    }
+
+    @include respond(phone){
+        font-size: 4rem;
+    }
 }
 
 .heading-secondary{
