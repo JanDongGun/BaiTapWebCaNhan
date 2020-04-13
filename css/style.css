@@ -92,6 +92,7 @@ body {
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 [class^=heading-] {
