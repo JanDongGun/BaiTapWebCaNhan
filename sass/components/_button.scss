@@ -1,36 +1,33 @@
-.btn{
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
 
-    &:link,
-    &:visited{
-        text-decoration: none;
-        font-size: 1.8rem;
+  &--dark {
+    display: inline-block;
+    color: $color-white;
+    background-color: $color-grey-dark-2;
+    padding: 1.5rem 4rem;
+    border-radius: 5px;
+    transition: 0.4s;
+    box-shadow: 0 1rem 1.5rem rgba($color: $color-black, $alpha: 0.08);
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-grey-dark-2;
+      transform: translateY(-10px);
+      box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: 0.2);
     }
 
-    &--dark{
-        display: inline-block;
-        color: $color-grey-dark-2;
-        border: .5px solid $color-grey-dark-2;
-        padding: 1.5rem 4rem;
-        border-radius: 5px;
-        transition: .4s;
-        box-shadow: 0 1rem 1.5rem rgba($color: $color-black, $alpha: 0.2);
-
-        &:hover{
-            color: $color-white;
-            background-color: $color-grey-dark-2;
-            transform: translateY(-10px);
-            box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: 0.3);
-        }
-
-        &:active{
-            transform: translateY(-5px);
-        }
+    &:active {
+      transform: translateY(-5px);
     }
+  }
 
-    &--animate{
-        animation:btnAnimate .5s backwards ease-out;
-        animation-delay: 2s;
-    }
-    
-
+  &--animate {
+    animation: btnAnimate 0.5s backwards ease-out;
+    animation-delay: 2s;
+  }
 }
