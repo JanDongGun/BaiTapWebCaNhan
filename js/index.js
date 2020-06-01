@@ -9,9 +9,6 @@ window.addEventListener('DOMContentLoaded', function () {
   var menuBar = document.querySelector('.menu__bars');
   var nav = document.querySelector('.nav');
   var closeBtn = document.querySelector('.nav__close');
-  var footer = document.querySelector('.footer');
-  var scrollTop = document.querySelector('.scrollTop');
-  var btn = document.querySelector('.btn');
 
   window.addEventListener('scroll', function () {
     var offset = window.pageYOffset;
@@ -39,41 +36,4 @@ window.addEventListener('DOMContentLoaded', function () {
     nav.classList.remove('nav--animate');
     closeBtn.classList.remove('nav__close--zoomClose');
   });
-
-  function smoothScroll(target, duration) {
-    var target = document.querySelector(target);
-    var targetPosition = target.offsetTop - 200;
-    var startPosition = window.pageYOffset;
-    var distance = targetPosition - startPosition;
-    var startTime = null;
-
-    function animationScroll(currentTime) {
-      if (startTime === null) startTime = currentTime; // sau 7s khi refesh  mới nhấn nút để chuyển động thì current time lúc đầu bằng 7 và thay đổi đến khi hết hiệu ứng
-      var timeElapsed = currentTime - startTime; // thời gian trôi qua
-      var run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
-      window.scrollTo(0, run);
-      if (timeElapsed < duration) requestAnimationFrame(animationScroll);
-    }
-
-    function easeInOutCubic(t, b, c, d) {
-      // function ease http://gizma.com/easing/#cub3
-      t /= d / 2;
-      if (t < 1) return (c / 2) * t * t * t + b;
-      t -= 2;
-      return (c / 2) * (t * t * t + 2) + b;
-    }
-
-    requestAnimationFrame(animationScroll);
-  }
-
-  scrollTop.addEventListener('click', function () {
-    smoothScroll('.menu', 1000); // menu top
-  });
-
-  if (btn !== null) {
-    // khi sang trang khác thì ko có nút learn more nữa nên bị lỗi btn là null
-    btn.addEventListener('click', function () {
-      smoothScroll('.section-dns', 1000);
-    });
-  }
 });
