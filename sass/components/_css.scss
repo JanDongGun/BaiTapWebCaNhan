@@ -1,135 +1,84 @@
 .css {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin: 4rem auto;
+  grid-auto-flow: dense;
+  text-align: center;
+  grid-gap: 1rem;
 
   @include respond(tab-land) {
-    width: 60%;
-    margin: auto;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
   }
-
-  @include respond(phone) {
-    width: 90%;
-    margin: auto;
+  &__box {
+    display: flex;
     justify-content: center;
-  }
-  &__square {
-    display: block;
-    width: 40rem;
-    height: 40rem;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10rem 1rem;
+    transition: 0.5s;
     position: relative;
-
-    @include respond(small-desktop) {
-      width: 30rem;
-      height: 30rem;
-    }
-
-    @include respond(tab-land) {
-      width: 40rem;
-      height: 40rem;
-      &:not(:last-child) {
-        margin-bottom: 10rem;
-      }
-    }
+    z-index: 1;
+    overflow: hidden;
 
     @include respond(tab-port) {
-      &:not(:last-child) {
-        margin-bottom: 8rem;
-      }
+      grid-column: unset !important;
+      grid-row: unset !important;
     }
+  }
 
-    @include respond(phone) {
-      width: 30rem;
-      height: 30rem;
-      &:not(:last-child) {
-        margin-bottom: 5rem;
-      }
-    }
+  &__box::before {
+    content: '';
+    width: 200%;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: 0.5s;
+  }
 
-    span:nth-child(1) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 2px solid $color-grey-dark-2;
-      border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-      transition: 0.5s;
-      animation: cssAnimate 6s linear infinite;
-    }
-
-    &:hover span:nth-child(1) {
-      border: none;
-      background: rgba($color: $color-primary, $alpha: 0.6);
-    }
-
-    span:nth-child(2) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 2px solid $color-grey-dark-2;
-      border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-      transition: 0.5s;
-      animation: cssAnimate 4s linear infinite;
-    }
-
-    &:hover span:nth-child(2) {
-      border: none;
-      background: rgba($color: $color-primary, $alpha: 0.6);
-    }
-
-    span:nth-child(3) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 2px solid $color-grey-dark-2;
-      border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-      transition: 0.5s;
-      animation: cssAnimate1 10s linear infinite;
-    }
-
-    &:hover span:nth-child(3) {
-      border: none;
-      background: rgba($color: $color-primary, $alpha: 0.6);
-    }
+  &__box:hover::before {
+    height: 180%;
   }
 
   &__title {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    width: 80%;
-    height: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: $color-grey-dark-2;
-    transition: 0.5s;
-
-    @include respond(phone) {
-      font-size: 2rem;
-    }
-
-    &-main {
-      font-size: 3rem;
-      font-weight: 500;
-      font-family: $default-font-2;
-      text-transform: uppercase;
-
-      @include respond(phone) {
-        font-size: 2rem;
-      }
-    }
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
   }
 
-  &__square:hover &__title {
-    color: $color-white;
+  &__sub {
+    font-size: 2rem;
+  }
+
+  &__box:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  &__box:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  &__box:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  &__box:nth-child(8) {
+    grid-column: span 2;
+    grid-row: span 1;
   }
 }
