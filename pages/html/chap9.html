@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/icon-font.css" />
+    <script
+      src="https://kit.fontawesome.com/1280773129.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="../../js/index.js"></script>
+    <title>| Forms |</title>
+    <style type="text/css">
+      ol,
+      ul {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <img src="../../img/preloader.svg" alt="" />
+    </div>
+
+    <nav class="nav">
+      <div class="nav__close"><i class="icon-arrows-remove"></i></div>
+      <ul class="nav__list">
+        <li>
+          <a href="../dns/dns.html" class="nav__item">Domain name/Hosting</a>
+        </li>
+        <li><a href="chap4.html" class="nav__item">HTML</a></li>
+        <li><a href="#" class="nav__item">CSS</a></li>
+        <li><a href="#" class="nav__item">JavaScript</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu">
+      <a href="../../index.html" class="menu__logo">đông gon</a>
+      <div class="menu__bars">
+        <div class="menu__bar"></div>
+      </div>
+    </div>
+
+    <main>
+      <div class="title-main">
+        Chapter 9 <br />
+        Forms
+      </div>
+
+      <div class="content">
+        <div class="content__box">
+          <div class="content__title">
+            1. Starting the contest form
+          </div>
+          <h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+          <p>
+            Want to trade in your old sneakers for a custom pair of Forcefields?
+            Make a case for why your shoes have <em>got</em> to go and you may
+            be one of ten lucky winners.
+          </p>
+
+          <form
+            action="https://www.learningwebdesign.com/contest.php"
+            method="POST"
+            accept-charset="utf-8"
+          >
+            <p>Contest Entry Information</p>
+
+            <ul>
+              <li>Name: <input type="text" name="username" /></li>
+              <li>Email: <input type="email" name="emailaddress" /></li>
+              <li>Phone: <input type="tel" name="telephone" /></li>
+              <li>
+                My shoes are SO old… <br />
+                <textarea
+                  name="story"
+                  rows="4"
+                  cols="60"
+                  maxlength="300"
+                  placeholder="No more than 300 characters long"
+                ></textarea>
+              </li>
+            </ul>
+
+            <p>
+              <input type="submit" value="Pimp my shoes!" />
+              <input type="reset" />
+            </p>
+          </form>
+          <h2>Design your custom Forcefields:</h2>
+
+          <p>Custom Shoe Design</p>
+
+          <p>Color <em>(choose one)</em>:</p>
+          <ul>
+            <li>Red</li>
+            <li>Blue</li>
+            <li>Black</li>
+            <li>Silver</li>
+          </ul>
+
+          <p>Features <em>(Choose as many as you want)</em></p>
+          <ul>
+            <li>Sparkley laces</li>
+            <li>Metallic logo</li>
+            <li>Light-up heels</li>
+            <li>MP3-enabled</li>
+          </ul>
+
+          <p>Size</p>
+          <p>Sizes reflect standard men's sizes:</p>
+        </div>
+
+        <div class="content__box">
+          <div class="content__title">2. Radio button and checkboxes</div>
+          <h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+
+          <p>
+            Want to trade in your old sneakers for a custom pair of Forcefields?
+            Make a case for why your shoes have <em>got</em> to go and you may
+            be one of ten lucky winners.
+          </p>
+
+          <form
+            action="https://www.learningwebdesign.com/contest.php"
+            method="POST"
+            accept-charset="utf-8"
+          >
+            <p>Contest Entry Information</p>
+
+            <ul>
+              <li>Name: <input type="text" name="username" /></li>
+              <li>Email: <input type="email" name="emailaddress" /></li>
+              <li>Phone: <input type="tel" name="telephone" /></li>
+              <li>
+                My shoes are SO old… <br />
+                <textarea
+                  name="story"
+                  rows="4"
+                  cols="60"
+                  maxlength="300"
+                  placeholder="No more than 300 characters long"
+                ></textarea>
+              </li>
+            </ul>
+
+            <h2>Design your custom Forcefields:</h2>
+
+            <p>Custom Shoe Design</p>
+
+            <p>Color <em>(choose one)</em>:</p>
+            <ul>
+              <li><input type="radio" name="color" value="red" /> Red</li>
+              <li><input type="radio" name="color" value="blue" />Blue</li>
+              <li><input type="radio" name="color" value="black" />Black</li>
+              <li><input type="radio" name="color" value="sliver" />Silver</li>
+            </ul>
+
+            <p>Features <em>(Choose as many as you want)</em></p>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="features[]"
+                  value="laces"
+                />Sparkley laces
+              </li>
+              <li>
+                <input type="checkbox" name="features[]" value="logo" />Metallic
+                logo
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="features[]"
+                  value="heels"
+                />Light-up heels
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="features[]"
+                  value="mp3"
+                />MP3-enabled
+              </li>
+            </ul>
+
+            <p>Size</p>
+            <p>Sizes reflect standard men's sizes:</p>
+
+            <p>
+              <input type="submit" value="Pimp my shoes!" />
+              <input type="reset" />
+            </p>
+          </form>
+        </div>
+
+        <div class="content__box">
+          <div class="content__title">
+            3. Adding a menu
+          </div>
+          <h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+
+          <p>
+            Want to trade in your old sneakers for a custom pair of Forcefields?
+            Make a case for why your shoes have <em>got</em> to go and you may
+            be one of ten lucky winners.
+          </p>
+
+          <form
+            action="https://www.learningwebdesign.com/contest.php"
+            method="POST"
+            accept-charset="utf-8"
+          >
+            <p>Contest Entry Information</p>
+
+            <ul>
+              <li>Name: <input type="text" name="username" /></li>
+              <li>Email: <input type="email" name="emailaddress" /></li>
+              <li>Phone: <input type="tel" name="telephone" /></li>
+              <li>
+                My shoes are SO old… <br />
+                <textarea
+                  name="story"
+                  rows="4"
+                  cols="60"
+                  maxlength="300"
+                  placeholder="No more than 300 characters long"
+                ></textarea>
+              </li>
+            </ul>
+
+            <h2>Design your custom Forcefields:</h2>
+
+            <p>Custom Shoe Design</p>
+
+            <p>Color <em>(choose one)</em>:</p>
+            <ul>
+              <li><input type="radio" name="color" value="red" /> Red</li>
+              <li><input type="radio" name="color" value="blue" />Blue</li>
+              <li><input type="radio" name="color" value="black" />Black</li>
+              <li><input type="radio" name="color" value="sliver" />Silver</li>
+            </ul>
+
+            <p>Features <em>(Choose as many as you want)</em></p>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="features[]"
+                  value="laces"
+                />Sparkley laces
+              </li>
+              <li>
+                <input type="checkbox" name="features[]" value="logo" />Metallic
+                logo
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="features[]"
+                  value="heels"
+                />Light-up heels
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="features[]"
+                  value="mp3"
+                />MP3-enabled
+              </li>
+            </ul>
+
+            <p>Size</p>
+            <p>Sizes reflect standard men's sizes:</p>
+
+            <select name="size" size="1">
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+            </select>
+
+            <p>
+              <input type="submit" value="Pimp my shoes!" />
+              <input type="reset" />
+            </p>
+          </form>
+        </div>
+        <div class="content__box">
+          <div class="content__title">
+            4. Labels and fieldsets
+          </div>
+
+          <h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+
+          <p>
+            Want to trade in your old sneakers for a custom pair of Forcefields?
+            Make a case for why your shoes have <em>got</em> to go and you may
+            be one of ten lucky winners.
+          </p>
+
+          <form
+            action="https://www.learningwebdesign.com/contest.php"
+            method="POST"
+            accept-charset="utf-8"
+          >
+            <fieldset id="" class="">
+              <legend>Contest Entry Information</legend>
+
+              <ul>
+                <li>
+                  <label for="form-name"> Name: </label
+                  ><input type="text" name="username" id="form-name" />
+                </li>
+                <li>
+                  <label for="form-email">Email:</label>
+                  <input type="email" name="emailaddress" id="form-email" />
+                </li>
+                <li>
+                  <label for="form-tel">Phone: </label
+                  ><input type="tel" name="telephone" id="form-tel" />
+                </li>
+                <li>
+                  <label for="story">My shoes are SO old…</label> <br />
+                  <textarea
+                    name="story"
+                    rows="4"
+                    cols="60"
+                    maxlength="300"
+                    placeholder="No more than 300 characters long"
+                    id="story"
+                  ></textarea>
+                </li>
+              </ul>
+            </fieldset>
+
+            <h2>Design your custom Forcefields:</h2>
+
+            <fieldset id="" class="">
+              <legend>Custom Shoe Design</legend>
+
+              <fieldset id="" class="">
+                <legend>Color <em>(choose one)</em>:</legend>
+                <ul>
+                  <li>
+                    <label>
+                      <input type="radio" name="color" value="red" /> Red
+                    </label>
+                  </li>
+                  <li>
+                    <label
+                      ><input
+                        type="radio"
+                        name="color"
+                        value="blue"
+                      />Blue</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      ><input
+                        type="radio"
+                        name="color"
+                        value="black"
+                      />Black</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      ><input
+                        type="radio"
+                        name="color"
+                        value="sliver"
+                      />Silver</label
+                    >
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset id="" class="">
+                <legend>Features <em>(Choose as many as you want)</em></legend>
+                <ul>
+                  <li>
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="features[]"
+                        value="laces"
+                      />Sparkley laces</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="features[]"
+                        value="logo"
+                      />Metallic logo</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="features[]"
+                        value="heels"
+                      />Light-up heels</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      ><input
+                        type="checkbox"
+                        name="features[]"
+                        value="mp3"
+                      />MP3-enabled</label
+                    >
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset id="" class="">
+                <legend>Size</legend>
+
+                <p>Sizes reflect standard men's sizes:</p>
+
+                <select name="size" size="1">
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                </select>
+              </fieldset>
+            </fieldset>
+
+            <p>
+              <input type="submit" value="Pimp my shoes!" />
+              <input type="reset" />
+            </p>
+          </form>
+        </div>
+        <div class="content__box">
+          <div class="content__title">Tìm hiểu thêm</div>
+          <a href="chap7.html" class="content__link"
+            >HTML - chap7.html &rarr;</a
+          >
+          <a href="chap8.html" class="content__link"
+            >HTML - chap8.html &rarr;</a
+          >
+          <a href="chap4.html" class="content__link"
+            >HTML - chap4.html &rarr;</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">đông gon</div>
+      <div class="footer__infors">
+        <div class="footer__infor">
+          trannguyendonggon@gmail.com<br />
+          (+84) 798 611 259
+        </div>
+        <div class="footer__infor">© Copyright 2020. All Rights Reserved</div>
+        <div class="footer__infor">
+          DaLat. 21/9A Vo Truong Toan. VN
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100024824135346"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/gontrannguyendong/"
+                target="_blank"
+              >
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/JanDongGun/webdesign" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/explore" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="scrollTop">&uarr;</div>
+  </body>
+</html>

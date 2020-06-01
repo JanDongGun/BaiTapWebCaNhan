@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/icon-font.css" />
+    <script
+      src="https://kit.fontawesome.com/1280773129.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="../../js/index.js"></script>
+    <title>| Table markup |</title>
+    <style type="text/css" media="screen">
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <img src="../../img/preloader.svg" alt="" />
+    </div>
+
+    <nav class="nav">
+      <div class="nav__close"><i class="icon-arrows-remove"></i></div>
+      <ul class="nav__list">
+        <li>
+          <a href="../dns/dns.html" class="nav__item">Domain name/Hosting</a>
+        </li>
+        <li><a href="chap4.html" class="nav__item">HTML</a></li>
+        <li><a href="#" class="nav__item">CSS</a></li>
+        <li><a href="#" class="nav__item">JavaScript</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu">
+      <a href="../../index.html" class="menu__logo">đông gon</a>
+      <div class="menu__bars">
+        <div class="menu__bar"></div>
+      </div>
+    </div>
+
+    <main>
+      <div class="title-main">
+        Chapter 8 <br />
+        Table Markup
+      </div>
+
+      <div class="content">
+        <div class="content__box">
+          <div class="content__title">1. Making a simple table</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Album</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Rubber Soul</td>
+                <td>1968</td>
+              </tr>
+              <tr>
+                <td>Revolver</td>
+                <td>1966</td>
+              </tr>
+              <tr>
+                <td>Sgt.Pepper's</td>
+                <td>1967</td>
+              </tr>
+              <tr>
+                <td>The White Album</td>
+                <td>1968</td>
+              </tr>
+              <tr>
+                <td>Abbey Road</td>
+                <td>1969</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="content__box">
+          <div class="content__title">2. Column spans</div>
+          <table>
+            <thead>
+              <th>7:00pm</th>
+              <th>7:30pm</th>
+              <th>8:00pm</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td colspan="3">The Sunday Night Movie</td>
+              </tr>
+              <tr>
+                <td>Perry Mason</td>
+                <td>Candid Camera</td>
+                <td>What's My Line</td>
+              </tr>
+              <tr>
+                <td>Bonanza</td>
+                <td colspan="2">The Wackiest Ship in the Army</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="content__box">
+          <div class="content__title">3. Row spans</div>
+          <table>
+            <tr>
+              <td>apples</td>
+              <td rowspan="3">oranges</td>
+              <td>pears</td>
+            </tr>
+            <tr>
+              <td>bananas</td>
+              <td rowspan="2">pineapple</td>
+            </tr>
+            <tr>
+              <td>lychees</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="content__box">
+          <div class="content__title">4. The table challenge</div>
+          <table>
+            <caption>
+              Your Content Here
+            </caption>
+
+            <tr>
+              <th rowspan="2"></th>
+              <th colspan="2">A common header for two subheads</th>
+              <th rowspan="2">Header 3</th>
+            </tr>
+
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+            </tr>
+
+            <tr>
+              <th scope="row">Thing A</th>
+              <td>data A1</td>
+              <td>data A2</td>
+              <td>data A3</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Thing B</th>
+              <td>data B1</td>
+              <td>data B2</td>
+              <td>data B3</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Thing C</th>
+              <td>data C1</td>
+              <td>data C2</td>
+              <td>data C3</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="content__box">
+          <div class="content__title">Tìm hiểu thêm</div>
+          <a href="chap6.html" class="content__link"
+            >HTML - chap6.html &rarr;</a
+          >
+          <a href="chap7.html" class="content__link"
+            >HTML - chap7.html &rarr;</a
+          >
+          <a href="chap9.html" class="content__link"
+            >HTML - chap9.html &rarr;</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">đông gon</div>
+      <div class="footer__infors">
+        <div class="footer__infor">
+          trannguyendonggon@gmail.com<br />
+          (+84) 798 611 259
+        </div>
+        <div class="footer__infor">© Copyright 2020. All Rights Reserved</div>
+        <div class="footer__infor">
+          DaLat. 21/9A Vo Truong Toan. VN
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100024824135346"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/gontrannguyendong/"
+                target="_blank"
+              >
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/JanDongGun/webdesign" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/explore" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="scrollTop">&uarr;</div>
+  </body>
+</html>
